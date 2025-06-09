@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+{% endblock %}
+
+{% block content %}
+    <h2>Choose your game</h2>
+    <p>Choose one of the games above.</p>
+    <a href="{% url 'guess' %}" class="button">Play Guess Game</a>
+    <a href="{% url 'puzzle' %}" class="button">Play Puzzle Game</a>
+{% endblock %}
