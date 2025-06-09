@@ -1,27 +1,22 @@
 {% extends "base.html" %}
 
 {% block styles %}
-    .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    .button {
+        padding: 15px 30px;
+        margin: 20px 0;
+        font-size: 18px;
+        color: white;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
-        .button {
-            padding: 15px 30px;
-            font-size: 18px;
-            color: white;
-            background-color: #007bff;
-            text-decoration: none;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
+    .button:hover {
+        background-color: #0056b3;
+    }
 {% endblock %}
 
 {% block content %}
